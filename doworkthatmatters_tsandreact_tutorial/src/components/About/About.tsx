@@ -1,42 +1,42 @@
-import * as React from "react";
-import { Component } from "react";
-import "./About.css";
+import * as React from 'react';
+import { Component } from 'react';
+import './About.css';
 
-interface IProps {
-  opts?: string;
+export interface IProps {
+    opts?: string;
 }
 
 interface IState {
-  opts?: string;
+    opts?: string;
 }
 
 export default class About extends Component<IProps, IState> {
-  constructor(props: IProps, state: IState) {
-    super(props, state);
-  }
 
-  public render() {
-    return (
-      <div>
-        <div>
-          <h2>About app:</h2>
-          Application was developed especially for frontend developers to
-          provide them the most reliable and modern information about popular
-          frameworks.
-        </div>
+    constructor(props: IProps, state: IState){
+        super(props, state);
+    }
 
-        <div>
-          <h2>Version:</h2>
-          1.0.3
-        </div>
+    public render() {
+        return (<div>
+                <div>
+                    <h2>About app:</h2>
+                    Application was developed especially for frontend developers to provide 
+                    them the most reliable and modern information about popular frameworks.
+                </div>
 
-        <div>
-          <h2>App Creator:</h2>
-          Kateryna Levytska
-        </div>
+                <div>
+                    <h2>Version:</h2>
+                    1.0.3
+                </div>
 
-        <div className="Footer">® All rights reserved</div>
-      </div>
-    );
-  }
+                <div>
+                    <h2>App Creator:</h2>
+                    Kateryna Levytska
+                </div>
+
+                <div className="Footer">
+                    ® All rights reserved
+                </div>
+        </div>);
+    }
 }

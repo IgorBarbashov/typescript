@@ -5,8 +5,8 @@ import "firebase/database";
 const config = {
   apiKey: "",
   authDomain: "",
-  databaseUrl: "",
-  projectIs: "",
+  databaseURL: "",
+  projectId: "",
   storageBucket: "",
   messagingSenderId: "",
   appId: ""
